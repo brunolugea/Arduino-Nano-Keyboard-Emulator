@@ -19,3 +19,17 @@ It includes an **Arduino sketch** and a **Python script** to receive button even
 3. Install Python 3 and the required libraries:
    ```bash
    pip install pyserial pynput
+4. Run the Python script: python ddr_buttons.py
+5. Your buttons will now behave like a physical keyboard in any application that accepts keyboard input.
+
+Customization
+
+Change the key mapping by editing the mapa dictionary in ddr_buttons.py.
+
+Adjust the number of buttons or debounce behavior directly in the Arduino sketch.
+
+Notes
+
+Currently supports Arduino Nano with CH340 chip (VID: 1A86, PID: 7523).
+
+Other Arduino models may require modifying the filtering in the Python script.
